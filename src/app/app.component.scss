@@ -1,0 +1,151 @@
+:host {
+    padding: 5px;
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.desktop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+
+.calendar-icon {
+    background: white;
+    height: 100%;
+    border: 0px solid white;
+    border-radius: 15px;
+
+    .calendar-day {
+        color: red;
+        font-size: 1.1rem;
+        text-align: center;
+        padding-top: 4px;
+    }
+
+    .calendar-date {
+        color: black;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+    }
+}
+
+.clock-icon {
+    background: black;
+    height: 100%;
+    border: 0px solid black;
+    border-radius: 15px;
+
+    .clock-background {
+        background: white;
+        height: 86%;
+        width: 86%;
+        border: 0px solid white;
+        border-radius: 60%;
+        position: relative;
+        top: 7%;
+        left: 7%;
+
+        .clock-numbers {
+            color: black;
+
+            .number {
+                position: absolute;
+                font-size: .75rem;
+
+                &.twelve {
+                    left: 40%;
+                }
+
+                &.one {
+                    top: 6%;
+                    left: 66%;
+                }
+
+                &.two {
+                    top: 18%;
+                    left: 80%;
+                }
+
+                &.three {
+                    left: 90%;
+                    top: 40%;
+                }
+
+                &.four {
+                    top: 63%;
+                    left: 81%;
+                }
+
+                &.five {
+                    top: 78%;
+                    left: 64%;
+                }
+
+                &.six {
+                    top: 83%;
+                    left: 45%;
+                }
+
+                &.seven {
+                    top: 78%;
+                    left: 27%;
+                }
+
+                &.eight {
+                    top: 64%;
+                    left: 10%;
+                }
+
+                &.nine {
+                    top: 42%;
+                    left: 0%;
+                }
+
+                &.ten {
+                    top: 23%;
+                    left: 4%;
+                }
+
+                &.eleven {
+                    top: 6%;
+                    left: 19%;
+                }
+            }
+        }
+
+        .clock-hands {
+            height: 100%;
+            width: 100%;
+
+            .hand {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: inline-block;
+                height: 2px;
+                transform-origin: left center;
+
+                &.second {
+                    background: red;
+                    width: 25px;
+                }
+
+                &.minute {
+                    background: black;
+                    width: 20px;
+                }
+
+                &.hour {
+                    background: black;
+                    width: 15px;
+                }
+            }
+        }
+    }
+}

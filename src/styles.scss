@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'scss/fontawesome.scss';
+@import 'scss/brands.scss';
+@import 'scss/solid.scss';
+
+html {
+    height: 100%;
+    font-size: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ios-background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+button {
+    cursor: pointer;
+}
+
+.float-right {
+    float: right;
+}
+
+.fa-battery-full {
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
